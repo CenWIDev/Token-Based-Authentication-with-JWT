@@ -1,0 +1,111 @@
+{
+	"id": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+	"name": "TokenAuth",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "2511b27a-169e-1cfe-ef5d-4feff48c7225",
+			"name": "Auth",
+			"description": "",
+			"write": true,
+			"order": [
+				"a25d3387-3aad-9283-d66e-5f9237bae837",
+				"308be718-e9aa-229f-9a9b-da20a44882f2"
+			],
+			"collection_name": "TokenAuth",
+			"collection_owner": 0,
+			"collection_id": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"collection": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"owner": 0
+		},
+		{
+			"id": "73a1d2f0-62ef-16ba-bb24-47b8548cafe3",
+			"name": "User",
+			"description": "",
+			"write": true,
+			"order": [
+				"bccc180b-8aab-5e17-de08-b152da512596"
+			],
+			"collection_name": "TokenAuth",
+			"collection_owner": 0,
+			"collection_id": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"collection": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"owner": 0
+		}
+	],
+	"timestamp": 1432670859910,
+	"synced": false,
+	"owner": 0,
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "308be718-e9aa-229f-9a9b-da20a44882f2",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:53705/api/auth/login",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1432675285789,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2511b27a-169e-1cfe-ef5d-4feff48c7225",
+			"synced": false,
+			"rawModeData": "{\n    \"email\" : \"someone@test.com\",\n    \"password\" : \"1234Example!\"\n}"
+		},
+		{
+			"id": "a25d3387-3aad-9283-d66e-5f9237bae837",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:53705/api/auth/register",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1432675339165,
+			"name": "Register",
+			"description": "",
+			"collectionId": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"email\" : \"someone@test.com\",\n    \"password\" : \"1234Example!\"\n}"
+		},
+		{
+			"id": "bccc180b-8aab-5e17-de08-b152da512596",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{AuthToken}}\n",
+			"url": "http://localhost:53705/api/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1432694613627,
+			"name": "Get",
+			"description": "",
+			"collectionId": "3cdc6222-875a-dfab-02b6-2bbd79f5714e",
+			"responses": [],
+			"synced": false
+		}
+	]
+}
